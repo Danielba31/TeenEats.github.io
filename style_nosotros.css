@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+ }
+body{
+font-family: cursive;
+margin:0 ;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+display: flex;
+position: fixed;
+width: 100%;
+background-color:rgb(30,30,30) ;
+min-height:83px ;
+padding:10px;
+
+}
+header .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+.nombre_e{
+    margin: 0;
+    text-decoration: none;
+    padding: 25px 10px;
+    font-weight: bold;
+    color: #ec9718;
+    font-size: 1.7em;
+}
+.logo{
+display: flex;
+margin:0;
+padding: 25px 30px;
+
+}
+.logo img {
+justify-content: left;
+width:100px ;
+height: 80px;
+border-radius:100px ;
+margin-right:10px;
+}
+header nav{
+text-align: center;
+display: flex;
+padding-bottom: 20px;
+}
+header a{
+    padding: 5px 12px;
+text-decoration: none;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right:10px;
+}
+nav a:hover{
+    color: #ec9718;
+    transition: all 500ms;
+}
+header nav a:first-child{
+    background-image: url(casa.png);
+    background-size: 29px;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    padding: 10px 30px;
+    
+}
+
+header nav a:first-child:hover{
+    transform: scale(1.3);
+    background-color: #ec9718a5 ;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5) ;
+    color: #ec9718;
+        transition: all 500ms;
+}
+
+
+h1{font-size: 2em;}
+h2{font-size: 1.5em;}
+h3{font-size:  1.25em;}
+
+
+
+button{
+    font-size: 1.5em;
+    font-weight:bold ;
+    padding: 10px 40px ;
+    border-radius: 100px;
+    border: 2px solid aqua ;
+    background-color:#5757f0;
+    color: white;
+    box-shadow: 3px 5px 20px  #17e1ef;
+    transition: all 500ms;
+}
+button:hover{
+    background-color: #222278;
+    cursor: pointer;    
+}
+.contenido{
+    max-width:1400px ;
+    margin:auto ;
+}
+#hero{
+    display: flex;
+    align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 90vh;
+color: white;
+background-image: linear-gradient(
+    0deg,
+    rgb(0,0,0,0.5),
+    rgb(0,0,0,0.5)
+)
+,url("alimentacion2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+#somosteen .contenido{
+    
+    padding: 200px 12px;
+}
+#somosteen .contenido p{
+    font-size: 18px;
+}
+#somosteen .contenido h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 70px;
+   
+}
+
+#somosteen .contenido p{
+    text-align: center;
+}
+
+
+.color-acento{color: #ec9718;
+}
+
+
+#demas{
+    color: white;
+    background-color: rgb(30,30,30);
+    text-align: center;
+ 
+}
+#demas .carta{
+    box-shadow:15px 30px 550px #1656aa
+}
+#demas .contenido{
+    padding: 10px 10px;
+}
+#demas h2{
+    color: #ec9718;
+    font-size: 30px;
+}
+
+.carta:first-child{
+background-image:  linear-gradient(
+    0deg,
+    rgb(0,0,0,0.5),
+    rgb(0,0,0,0.5)
+    )
+,url("empresas-publicas-1.jpg");
+background-position: center center;
+background-size: cover;
+padding: 50px 0px;
+margin:30px;
+border-radius: 25px; 
+
+}
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+    0deg,
+    rgb(0,0,0,0.5),
+    rgb(0,0,0,0.5)
+)
+,url("ejecucion-2.jpg"); 
+background-position: center center;
+background-size: cover;
+padding: 50px 0px;
+margin:30px;
+border-radius: 25px;
+}
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("ejecucion-2.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin:30px;
+    border-radius: 25px;
+}
+
+.carta:nth-child(4){
+    background-image:  linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("ejecucion-2.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin:30px;
+    border-radius: 25px;
+}
+
+
+footer{
+   
+    background-color: rgb(230,230,230);
+    
+   
+}
+footer p{
+    margin:0;
+    padding:120px ;
+    color: rgb(100,100,100);
+}
+footer .contenido{
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: flex end;
+
+}
+@media (min-width:700px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .contenido{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    #hero h1{
+        font-size: 3.4em;
+    }
+    #somosteen .contenido{
+
+        height: auto;
+        display:flex;
+        justify-content: space-evenly;
+        padding:100px 12px
+        
+
+    }
+    #somoteen .texto{
+        width:30%;
+        max-width:200px;
+        text-align:initial ;
+        padding-left:30px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #somoteen .contenido h2{
+        margin:70px;
+    }
+    #somosteen .img-container{
+        border-radius: 30px 80px;
+        display: flex;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),url("trabajo_en_equipo.jpg");
+        background-size:cover;
+        background-position:center center;
+        height:50vh;
+        width:150vh;
+        margin:70px 10px
+    }
+    #demas h3{
+        margin-top: 0;
+
+    }
+    #demas .carta{
+        padding:15px;
+
+    }
+    #demas .programas{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #demas p{
+        display:block;
+        margin-bottom:30px;
+    }
+    #hero{
+        display: flex;
+        align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 130vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("alimentacion2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    #hero h1{
+        font-size: 75px;
+    }
+    #hero button{
+font-size: 50px;
+    } 
+}
